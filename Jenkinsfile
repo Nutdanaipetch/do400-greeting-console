@@ -23,7 +23,7 @@ pipeline{
 	stage('Release') {
 		steps {
 			sh '''
-				oc project ugwwrf-greetings
+				oc project ugwwrf
 				oc start-build greeting-console --follow --wait
 			'''
 		}
